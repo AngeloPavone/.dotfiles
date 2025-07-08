@@ -31,10 +31,7 @@
           modules = [
             ./configuration.nix
             {
-              environment.systemPackages = with pkgs;
-                [
-                  # system wide packages go here!
-                ];
+              environment.systemPackages = with pkgs; [ ];
 
               system.stateVersion = "24.11";
             }

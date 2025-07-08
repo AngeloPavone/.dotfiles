@@ -29,6 +29,7 @@
     fd
     fish
     fzf
+    gh
     git
     go
     gofumpt
@@ -43,12 +44,14 @@
     python313Packages.pip
     python313Packages.venvShellHook
     ripgrep
+    starship
     stylua
     trash-cli
     unzip
+    vim
     wget
     zellij
-    gh
+    zoxide
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello

@@ -7,7 +7,7 @@
 # NixOS-WSL specific options are documented on the NixOS-WSL repository:
 # https://github.com/nix-community/NixOS-WSL
 
-{ neovim11, pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [ inputs.wsl.nixosModules.default ];
@@ -18,13 +18,7 @@
   };
 
   # Install fish globally for better portability accross systems outside of WSL
-  environment.systemPackages = with pkgs; [
-    fish
-    home-manager
-    zoxide
-    starship
-    vim
-  ];
+  environment.systemPackages = with pkgs; [ ];
 
   users.users.angelo = {
     # shell = "/run/current-system/sw/bin/fish"; # system wide fish path
@@ -32,6 +26,7 @@
     extraGroups = [ "wheel" ];
   };
 
+  # Uncomment if i decide i want to use home-manager as a module
   # home-manager = {
   #   useUserPackages = true;
   #   useGlobalPkgs = true;
