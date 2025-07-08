@@ -1,0 +1,15 @@
+.DS_Store
+
+# Secrets
+.config/gh/hosts.yml
+
+# Generated
+.config/systemd/
+.config/environment.d/
+
+# Optional: ignore editor backups or cache
+*.swp
+*.bak
+
+# Stupid Go Telemetry
+.config/go/
