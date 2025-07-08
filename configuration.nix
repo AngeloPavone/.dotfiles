@@ -18,10 +18,10 @@
   };
 
   # Install fish globally for better portability accross systems outside of WSL
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [ fish ];
 
   users.users.angelo = {
-    # shell = "/run/current-system/sw/bin/fish"; # system wide fish path
+    shell = "${pkgs.fish}/bin/fish";
     isNormalUser = true;
     extraGroups = [ "wheel" ];
   };

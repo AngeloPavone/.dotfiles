@@ -27,7 +27,6 @@
     eza
     fastfetch
     fd
-    fish
     fzf
     gh
     git
@@ -102,10 +101,7 @@
   #
   #  /etc/profiles/per-user/angelo/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    EDITOR = "nvim";
-    SHELL = "${pkgs.fish}/bin/fish";
-  };
+  home.sessionVariables = { };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
