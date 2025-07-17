@@ -36,22 +36,6 @@
         "type": "github"
       }
     },
-    "neovimPkgs": {
-      "locked": {
-        "lastModified": 1751208565,
-        "narHash": "sha256-kb4Dc0VCC5bk89J/RCQNabC3XPMtBAep36eL9EookqU=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "704946d221d19d1bc309fb6644479035745a0583",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "704946d221d19d1bc309fb6644479035745a0583",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1751271578,
@@ -87,7 +71,6 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "neovimPkgs": "neovimPkgs",
         "nixpkgs": "nixpkgs",
         "wsl": "wsl"
       }

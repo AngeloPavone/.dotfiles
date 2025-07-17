@@ -1,7 +1,7 @@
 # home.nix
 #
 # Empty import as i dont need any atm
-{ neovim11, pkgs, ... }: {
+{ pkgs, ... }: {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "angelo";
@@ -19,6 +19,15 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    noto-fonts-color-emoji
+    libvterm
+    cmake
+    gnumake
+    ispell
+    ninja
+    pkg-config
+    libtool
     black
     btop
     cargo
@@ -36,7 +45,7 @@
     gotools
     lazygit
     luarocks
-    neovim11
+    neovim
     nodejs
     pyright
     python313
@@ -69,6 +78,13 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  # pkgs.config.packageOverrides = pkgs: {
+  #   emacs = pkgs.emacs.override {
+  #     name = "emacs-30.1-stable";
+  #     # src = /usr/bin/env;
+  #   };
+  # };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
