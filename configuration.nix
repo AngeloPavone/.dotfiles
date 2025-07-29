@@ -17,8 +17,22 @@
     defaultUser = "angelo";
   };
 
+  programs.hyprland = {
+    # Install the packages from nixpkgs
+    enable = true;
+    # Whether to enable XWayland
+    xwayland.enable = true;
+  };
+
   # Install fish globally for better portability accross systems outside of WSL
-  environment.systemPackages = with pkgs; [ fish ];
+  environment.systemPackages = with pkgs; [
+    fish
+    mesa
+    hyprland
+    hyprland-protocols
+    wayland
+    wayland-protocols
+  ];
 
   users.users.angelo = {
     shell = "${pkgs.fish}/bin/fish";

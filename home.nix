@@ -19,41 +19,63 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    # nerd-fonts.jetbrains-mono
-    nerd-fonts.d2coding
-    noto-fonts-color-emoji
-    libvterm
-    cmake
-    gnumake
-    ispell
-    ninja
-    pkg-config
-    libtool
     black
     btop
     cargo
     clang
+    clang-tools
+    cloc
+    cmake
     curl
+    delve
+    emacs
     eza
     fastfetch
     fd
     fzf
+    firefox
+    jack2
+    alsa-lib
+    gdb
     gh
     git
+    gnumake
     go
     gofumpt
     gopls
     gotools
+    ispell
     lazygit
+    libtool
+    libvterm
+    lldb
+    libcxx
     luarocks
     neovim
+    hyperfine
+    nerd-fonts._0xproto
+    nerd-fonts.code-new-roman
+    nerd-fonts.d2coding
+    nerd-fonts.envy-code-r
+    nerd-fonts.fantasque-sans-mono
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.sauce-code-pro
+    nerd-fonts.symbols-only
+    nerd-fonts.ubuntu
+    nerd-fonts.victor-mono
+    nerd-fonts.zed-mono
+    ninja
     nodejs
+    noto-fonts-color-emoji
+    pkg-config
     pyright
     python313
     python313Packages.pip
     python313Packages.venvShellHook
     ripgrep
     starship
+    stow
     stylua
     trash-cli
     unzip
@@ -61,9 +83,6 @@
     wget
     zellij
     zoxide
-    emacs
-    cloc
-    stow
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
