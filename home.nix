@@ -24,7 +24,6 @@
     cargo
     clang
     clang-tools
-    cloc
     cmake
     curl
     delve
@@ -34,8 +33,6 @@
     fd
     fzf
     firefox
-    jack2
-    alsa-lib
     gdb
     gh
     git
